@@ -14,7 +14,7 @@ let minimumFuelTemp = -300;
 let maximumFuelTemp = -150;
 let fuelLevel = '100%';
 let weatherStatus = 'Clear';
-let preparedForLiftOff = true;
+let preparedForLiftOff = false;
 
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 if (astronautCount <= 7) {
@@ -23,7 +23,9 @@ if (astronautCount <= 7) {
             if (fuelTempCelsius > -300 && fuelTempCelsius < -150)
                 if (fuelLevel === '100%')
                     if (weatherStatus === 'Clear')
-                    preparedForLiftOff == true;
+                    preparedForLiftOff = true;
+} else {
+    preparedForLiftOff = false
 } 
 
 if (preparedForLiftOff) {
