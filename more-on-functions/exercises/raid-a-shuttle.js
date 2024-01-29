@@ -20,7 +20,18 @@ function holdStatus(arr){
 
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
+let incomeTaxes = function(n) {
+  if (checkFuel(n) === 'green') {
+    return n - 99999; 
+  } else if (checkFueln(n) === 'yellow') {
+    return n - 4999;
+  } else {
+    return n;
+  }
 
+};
+
+console.log(incomeTaxes(fuelLevel));
 console.log("Fuel level: " + checkFuel(fuelLevel));
 console.log("Hold status: " + holdStatus(cargoHold));
 
@@ -54,4 +65,5 @@ console.log("Hold status: " + holdStatus(cargoHold));
 //b). Call your anonymous fuel and cargo functions from within irs.
 
 //c). Use a template literal to return, "Raided _____ kg of fuel from the tanks, and stole ____ and ____ from the cargo hold."
+*/
 
