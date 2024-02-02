@@ -1,8 +1,13 @@
 // Code your selectRandomEntry function here:
-
+function selectRandomEntry(arr) {
+  let index = Math.floor(Math.random()*arr.length);
+  return arr[index];
+}
 
 // Code your buildCrewArray function here:
-
+function buildCrewArray(arr1, arr2) {
+  
+}
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
 

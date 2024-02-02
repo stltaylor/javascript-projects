@@ -1,7 +1,17 @@
 // Code your orbitCircumference function here:
 
-
+function orbitCircumference(radius) {
+  return Math.round(((Math.PI) * 2) * radius)
+}
 // Code your missionDuration function here:
+let deflautRadius = 2000;
+let deflautSpeed = 28000;
+ 
+function missionDuration(numOrbits, orbitRadius, orbitalSpeed) {
+  let answer = numOrbits * (Math.round((((orbitCircumference(orbitRadius))/orbitalSpeed))*100/100));
+  return answer
+}
+
 
 
 // Copy/paste your selectRandomEntry function here:
