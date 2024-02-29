@@ -8,7 +8,28 @@
     </style>
   </head>
   <body>
-    <!-- TODO: add form here -->
+    <form action='http://handlers.education.launchcode.org/request-parrot' method="POST">
+      <label>Test Name <input type='text' name='testName'/></label>
+      <label>Test Date <input type='date' name='testDate'/></label>
+      <label>Rocket Type 
+        <select name='rocketType'>
+          <option value="">* Select One *</option>
+          <option value="1">Brant</option>
+          <option value="2">Lynx</option>
+          <option value="3">Orion</option>
+          <option value="4">Terrier</option>
+        </select></label>
+      <label>Number of Rocket Boosters<input type='number'
+      name='boosterCount' min='1' max='9'/></label>
+      <div>Wind Rating</div>
+      <label>No Wind<input type='radio' name='windRating' value='0'/></label>
+      <label>Mild<input type='radio' name='windRating' value='10'/></label>
+      <label>Strong<input type='radio' name='windRating' value='20'/></label>
+      <div>Use production grade servers</div>
+      <label>On<input type='checkbox' name="productionServers" value="on"/></label>
+      <label>Off<input type='checkbox' name='productionServers' value="off"/></label>
+      <button>Run Simulation</button>
+    </form>
     
 
     <p>WARNING: This ONLY works in <b>replit</b> if this "result" page is opened in its own window. Click the icon that shows a box with an arrow coming out of it.
@@ -16,3 +37,8 @@
   </body>
   
 </html>
+
+
+<!-- 
+Wind Rating radio windRating No Wind: with value 0, Mild: with value 10, Strong: with value 20
+Use production grade servers checkbox productionServers on or off --> -->
